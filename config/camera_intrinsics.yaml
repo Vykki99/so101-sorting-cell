@@ -1,0 +1,8 @@
+# 640x480. Keys will be matched to the teleop repo format when sorter/camera.py is ported.
+width: 640
+height: 480
+camera_matrix:
+  - [0.0, 0.0, 0.0]  # TODO: calibrate
+  - [0.0, 0.0, 0.0]  # TODO: calibrate
+  - [0.0, 0.0, 1.0]  # TODO: calibrate
+dist_coeffs: [0.0, 0.0, 0.0, 0.0, 0.0]  # TODO: calibrate

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+outputs/
+wandb/
+.env
+.env.*
+*token*
+*.secret
+config.json
+config.local.*
+datasets/
+data/

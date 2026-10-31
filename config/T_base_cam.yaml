@@ -1,0 +1,7 @@
+# 4x4 rigid transform from the camera frame to the robot base frame.
+# The identity below is a placeholder, not a calibration.
+T_base_cam:  # TODO: calibrate camera-to-base transform
+  - [1.0, 0.0, 0.0, 0.0]
+  - [0.0, 1.0, 0.0, 0.0]
+  - [0.0, 0.0, 1.0, 0.0]
+  - [0.0, 0.0, 0.0, 1.0]
