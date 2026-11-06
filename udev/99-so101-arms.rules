@@ -1,0 +1,6 @@
+# SO-101 arms. Match the CH340 serial so ttyACM numbers can swap after a reboot.
+# Follower: /dev/ttyACM0 on 2026-10-31, serial 5B3D040347.
+# Leader:   /dev/ttyACM1 on 2026-10-31, serial 5B3D040811.
+# MODE 0666 matches the guide: this user is not in the dialout group.
+SUBSYSTEM=="tty", KERNEL=="ttyACM*", ENV{ID_SERIAL_SHORT}=="5B3D040347", SYMLINK+="so101_follower", MODE="0666"
+SUBSYSTEM=="tty", KERNEL=="ttyACM*", ENV{ID_SERIAL_SHORT}=="5B3D040811", SYMLINK+="so101_leader", MODE="0666"

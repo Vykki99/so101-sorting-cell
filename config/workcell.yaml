@@ -1,12 +1,14 @@
-# Metres, robot base frame. Every number below is a placeholder.
+# Metres, robot base frame.
+# Workspace is the 2026-11-06 sweep, shrunk by 2 cm on every side.
+# Raw end effector: x [-0.0220, 0.3638], y [-0.3066, 0.3446], z [-0.0195, 0.2617].
 
 workspace:
-  x_min: 0.0  # TODO: measure end-effector limits
-  x_max: 0.0  # TODO: measure end-effector limits
-  y_min: 0.0  # TODO: measure end-effector limits
-  y_max: 0.0  # TODO: measure end-effector limits
-  z_min: 0.0  # TODO: measure end-effector limits
-  z_max: 0.0  # TODO: measure end-effector limits
+  x_min: -0.0020
+  x_max: 0.3438
+  y_min: -0.2866
+  y_max: 0.3246
+  z_min: 0.0005
+  z_max: 0.2417
 
 pick_area:
   x_min: 0.0  # TODO: measure on the table
@@ -35,13 +37,13 @@ cube_size_m: 0.0  # TODO: measure on the table
 # HSV ranges are [H, S, V]. Red wraps, so it has two ranges.
 hsv:
   red:
-    - [0, 0, 0]  # TODO: tune under the fixed lamp
-    - [0, 0, 0]  # TODO: tune under the fixed lamp
-    - [0, 0, 0]  # TODO: tune under the fixed lamp
-    - [0, 0, 0]  # TODO: tune under the fixed lamp
+    - [0, 0, 0]  # TODO: tune under the fixed lighting
+    - [0, 0, 0]  # TODO: tune under the fixed lighting
+    - [0, 0, 0]  # TODO: tune under the fixed lighting
+    - [0, 0, 0]  # TODO: tune under the fixed lighting
   blue:
-    - [0, 0, 0]  # TODO: tune under the fixed lamp
-    - [0, 0, 0]  # TODO: tune under the fixed lamp
+    - [0, 0, 0]  # TODO: tune under the fixed lighting
+    - [0, 0, 0]  # TODO: tune under the fixed lighting
   green:
-    - [0, 0, 0]  # TODO: tune under the fixed lamp
-    - [0, 0, 0]  # TODO: tune under the fixed lamp
+    - [0, 0, 0]  # TODO: tune under the fixed lighting
+    - [0, 0, 0]  # TODO: tune under the fixed lighting

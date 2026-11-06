@@ -14,11 +14,13 @@ else
   echo "LeRobot already cloned at ${LEROBOT_DIR}; leaving it unchanged."
 fi
 
+# There is no v0.6.2 git tag. The guide's "v0.6.2" is the package version on main
+# (pyproject.toml). This script does not pull or checkout a different revision.
+PY_VER="$(awk -F'"' '/^version = /{print $2; exit}' "${LEROBOT_DIR}/pyproject.toml")"
 DESC="$(git -C "${LEROBOT_DIR}" describe --tags --always)"
-echo "LeRobot version: ${DESC}"
-echo "Expected revision is v0.6.2. This script does not pull or checkout a different revision."
-if [[ "${DESC}" != v0.6.2 && "${DESC}" != v0.6.2-* ]]; then
-  echo "WARNING: clone is ${DESC}, not v0.6.2." >&2
+echo "LeRobot package version: ${PY_VER} (${DESC})"
+if [[ "${PY_VER}" != "0.6.2" ]]; then
+  echo "WARNING: clone package version is ${PY_VER}, not 0.6.2." >&2
 fi
 
 pip install -e "${LEROBOT_DIR}[core_scripts,feetech,kinematics,training]"
