@@ -12,5 +12,7 @@ Phase 0, bring-up, is done. Both arms move together, the overhead camera is lock
 | 2026-11-06 | Set up the overhead camera | Done. Focus and brightness stay fixed under the LED strips. |
 | 2026-11-06 | Teleoperate with the camera | Done. The camera view shows while the arms move. The first try failed until the follower was power-cycled. |
 | 2026-11-06 | Measure the workspace | Done. The box the gripper can reach over the table is saved. |
+| 2026-11-19 | Write the arm module | Done. Targets are clamped to the measured box, then played back as joint steps. |
+| 2026-11-19 | Trace a 4 cm square | Done at 60 Hz. Closing error 5.7 mm. The gripper tip still shakes a little. |
 
-Next is Phase 1a: the gripper follows a hand-held marker.
+Next is 1a.3: the gripper follows a hand-held marker.
